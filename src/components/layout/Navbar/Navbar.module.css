@@ -1,0 +1,19 @@
+.hoverLink {
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.hoverLink::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.hoverLink:hover::after {
+    width: 70%;
+}
