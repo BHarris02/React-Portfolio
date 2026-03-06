@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import styles from './Navbar.module.css';
+import { socials } from '@/constants/socials';
 
 export default function Navbar() {
     return (
@@ -24,12 +24,17 @@ export default function Navbar() {
                 </li>
             </ul>
             <div className="d-flex gap-2">
-                <a href="#" className="btn btn-outline-light">
-                    <FaGithub size={24} />
-                </a>
-                <a href="#" className="btn btn-outline-light">
-                    <FaLinkedin size={24} />
-                </a>
+                {socials.map((social) => (
+                    <a 
+                    key={social.name}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-light"
+                    aria-label={social.name}>
+                        <social.icon size={24} />
+                    </a>
+                ))}
             </div>
         </nav>
     );
