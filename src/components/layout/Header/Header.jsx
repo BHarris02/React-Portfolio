@@ -9,10 +9,10 @@ export default function Header() {
                     JUNIOR SOFTWARE DEVELOPER | FLASK • SPRING BOOT • ANDROID • SQL
                 </h4>
                 <h1 className="text-white fw-bold display-4 mb-4 lh-sm">
-                    Hi, I'm <span className={styles.outlineText}>Blake</span>, 
+                    {"Hi, I'm"} <span className={styles.outlineText}>Blake</span>, 
                     a Software Developer
                 </h1>
-                <a href="#" className='btn btn-outline-light btn-lg'>
+                <a href="#" className="btn btn-outline-light btn-lg">
                     Download CV
                 </a>
             </div>
