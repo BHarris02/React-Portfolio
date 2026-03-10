@@ -15,6 +15,7 @@ export default function Footer() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white fs-3"
+                        aria-label={social.name}
                         >
                             <social.icon size={24} />
                         </a>

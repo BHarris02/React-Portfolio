@@ -1,4 +1,5 @@
 export const about = [
-    "First paragraph",
-    "Second paragraph"
+    "I'm a Junior Software Developer at Deloitte, working in the Government & Public sector as an Android Developer - with an MEng in Software Engineering, professional bootcamp training, and a habit of never quite switching off.",
+    "My journey into development started with an A-Level project in sixth form. Looking back, the code was terrible - but finishing it was the moment I knew this was the career I wanted. That curiosity has only grown since, and now I have an ever-expanding roster of personal projects on the go at any given time.",
+    "Professionally and personally, what I care about most is writing code that's clean, maintainable, and architecturally sound. Building something that works is one thing - building something that's a breeze to come back to is another."
 ];
