@@ -1,4 +1,6 @@
-export const projects = [
+import { Project } from '@/types/project';
+
+export const projects: Project[] = [
     {
         title: "SASD Detection Tool",
         description: 

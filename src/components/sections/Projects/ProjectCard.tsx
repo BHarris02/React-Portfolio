@@ -1,7 +1,8 @@
+import { Project } from '@/types/project';
 import ProjectRepoButton from './ProjectRepoButton';
 import styles from './Projects.module.css';
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project }: { project: Project }) {
     return (
         <div className="col-md-6 col-lg-4">
             <div className={`${styles.card} p-4 h-100 d-flex flex-column`}>
