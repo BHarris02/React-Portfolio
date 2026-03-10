@@ -1,12 +1,14 @@
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
 export const socials = [
     {
         name: "GitHub",
-        icon: "devicon-github-original",
+        icon: FaGithub,
         url: "https://github.com/BHarris02"
     },
         {
         name: "LinkedIn",
-        icon: "devicon-linkedin-plain",
+        icon: FaLinkedin,
         url: "https://linkedin.com/in/blake-harris-890039375/"
     }
 ]

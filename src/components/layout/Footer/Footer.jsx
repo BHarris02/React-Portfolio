@@ -16,7 +16,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         className="text-white fs-3"
                         >
-                            <i className={social.icon}></i>
+                            <social.icon size={24} />
                         </a>
                     ))}
                 </div>
