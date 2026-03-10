@@ -1,0 +1,70 @@
+name: CI
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+    eslint:
+        name: Run ESLint
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version: '25'
+                cache: 'npm'
+
+            - name: Install deps
+              run: npm ci
+
+            - name: Run ESLint
+              run: npm run lint
+
+    jest:
+        name: Run Jest
+        runs-on: ubuntu-latest
+        needs: eslint
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                node-version: '25'
+                cache: 'npm'
+
+            - name: Install deps
+              run: npm ci
+
+            - name: Run tests
+              run: npm test -- --ci
+
+    build:
+        name: Run Build
+        runs-on: ubuntu-latest
+        needs: jest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                node-version: '25'
+                cache: 'npm'
+
+            - name: Install deps
+              run: npm ci
+
+            - name: Run build
+              run: npm run build
