@@ -46,13 +46,13 @@ export const projects: Project[] = [
         description: 
         "This is my personal portfolio website built with Next.js and deployed on Vercel, featuring a responsive, modern design and smooth navigation.",
         tech: [
-            { icon: "devicon-javascript-plain", color: "#F7DF1E", name: "JavaScript" },
+            { icon: "devicon-typescript-plain", color: "#3178C6", name: "TypeScript" },
             { icon: "devicon-react-plain", color: "#61DAFB", name: "React" },
             { icon: "devicon-nextjs-plain", color: "#000", name: "Next.js" },
             { icon: "devicon-bootstrap-plain", color: "#7952B3", name: "Bootstrap" },
             { icon: "devicon-vercel-original", color: "#fff", name: "Vercel" }
         ],
-        repo: ""
+        repo: "https://github.com/BHarris02/React-Portfolio"
     },
     {
         title: "BlueWatch NI",
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     {
         title: "Acebook",
         description: 
-        "Update me!",
+        "A Facebook-inspired social platform built with Java Spring Boot as part of a penultimate team project during my software engineering bootcamp.",
         tech: [
             { icon: "devicon-java-plain", color: "#007396", name: "Java" },
             { icon: "devicon-spring-original", color: "#6DB33F", name: "Spring Boot" },
@@ -84,7 +84,7 @@ export const projects: Project[] = [
     {
         title: "UNO",
         description: 
-        "Update me!",
+        "A multiplayer UNO card game wth real-time gameplay powered by WebSockets (STOMP/SockJS). Built as our final project during my Makers software engineering bootcamp.",
         tech: [
             { icon: "devicon-java-plain", color: "#007396", name: "Java" },
             { icon: "devicon-spring-original", color: "#6DB33F", name: "Spring Boot" },
@@ -92,7 +92,7 @@ export const projects: Project[] = [
             { icon: "devicon-html5-plain", color: "#E34F26", name: "HTML" },
             { icon: "devicon-css3-plain", color: "#1572B6", name: "CSS" },
         ],
-        repo: ""
+        repo: "https://github.com/LapinDuMort/Uno-Pro-Gamers"
     },
     {
         title: "Swissue",
