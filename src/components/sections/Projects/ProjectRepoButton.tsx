@@ -1,4 +1,8 @@
-export default function ProjectRepoButton({ repo }) {
+type ProjectRepoButtonProps = {
+    repo: string | null;
+};
+
+export default function ProjectRepoButton({ repo }: ProjectRepoButtonProps) {
     if (repo) {
         return (
             <a 

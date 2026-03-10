@@ -1,4 +1,6 @@
-export const skills = [
+import { SkillCategory } from '@/types/skill';
+
+export const skills: SkillCategory[] = [
     {
         category: "Languages",
         items: [

@@ -1,6 +1,7 @@
+import { ExperienceEntryType } from '@/types/experience';
 import styles from './Experience.module.css';
 
-export default function ExperienceEntry({ entry }) {
+export default function ExperienceEntry({ entry }: { entry: ExperienceEntryType }) {
     return (
         <div className={styles.timelineItem}>
             <span className={styles.dot}></span>
@@ -10,7 +11,7 @@ export default function ExperienceEntry({ entry }) {
                 <span className="text-primary text-white">{entry.company}</span>
                 <p className="text-secondary mt-2 b-2">{entry.description}</p>
                 <ul className="text-secondary ps-3 mb-0">
-                    {entry.achievements.map((a, i) => (
+                    {entry.achievements.map((a: string, i: number) => (
                         <li key={i} className="mb-1">{a}</li>
                     ))}
                 </ul>
