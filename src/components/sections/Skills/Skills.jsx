@@ -1,5 +1,5 @@
 import { skills } from "@/constants/skills";
-import styles from './Skills.module.css';
+import SkillGroup from "./SkillGroup";
 
 export default function Skills() {
     return (
@@ -8,25 +8,9 @@ export default function Skills() {
             <p className="text-secondary mb-5">Technologies I work with</p>
             <div className="row g-4">
                 {skills.map((group) => (
-                    <div key={group.category} className="col-md-4">
-                        <div className={`${styles.card} p-4 h-100`}>
-                            <h4 className="text-white fw-semibold mb-4 text-center">{group.category}</h4>
-                            <div className="d-flex flex-wrap justify-content-center gap-3">
-                                {group.items.map((skill) => (
-                                    <i
-                                    key={skill.name}
-                                    className={`${skill.icon} ${styles.skillIcon}`}
-                                    style={{ color: skill.color }}
-                                    >
-                                        <span className={styles.tooltip}>{skill.name}</span>
-                                    </i>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
+                    <SkillGroup key={group.category} group={group} />
                 ))}
             </div>
         </section>
-
     );
 }
