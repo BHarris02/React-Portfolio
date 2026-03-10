@@ -1,0 +1,9 @@
+.hero {
+    position: relative;
+    min-height: 80vh;
+}
+
+.outlineText {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
