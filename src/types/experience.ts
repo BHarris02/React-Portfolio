@@ -1,4 +1,4 @@
-export type ExperienceEntry = {
+export type ExperienceEntryType = {
     title: string,
     company: string,
     date: string,
