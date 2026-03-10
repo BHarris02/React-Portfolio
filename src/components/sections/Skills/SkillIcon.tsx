@@ -1,6 +1,11 @@
+import { TechItem } from '@/types/tech';
 import styles from './Skills.module.css';
 
-export default function SkillIcon({ skill }) {
+type SkillIconProps = {
+    skill: TechItem
+}
+
+export default function SkillIcon({ skill }: SkillIconProps) {
     return (
         <i
         className={`${skill.icon} ${styles.skillIcon}`}

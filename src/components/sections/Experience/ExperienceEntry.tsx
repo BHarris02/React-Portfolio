@@ -1,6 +1,7 @@
+import { ExperienceEntry } from '@/types/experience';
 import styles from './Experience.module.css';
 
-export default function ExperienceEntry({ entry }) {
+export default function ExperienceEntry({ entry }): { entry: ExperienceEntry } {
     return (
         <div className={styles.timelineItem}>
             <span className={styles.dot}></span>

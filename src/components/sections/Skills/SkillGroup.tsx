@@ -1,7 +1,12 @@
+import { SkillCategory } from '@/types/skill';
 import SkillIcon from './SkillIcon';
 import styles from './Skills.module.css';
 
-export default function SkillGroup({ group }) {
+type SkillGroupProps = {
+    group: SkillCategory
+}
+
+export default function SkillGroup({ group }: SkillGroupProps) {
     return (
         <div className="col-md-4">
             <div className={`${styles.card} p-4 h-100`}>
